@@ -46,9 +46,9 @@ li:hover{
 	margin-left: 8%;
 	float: left;
 }
-#imagenes > input{
-	margin-top: 11%;
-	margin-left: 0%;
+#imagenes > span{
+	margin-top: 13%;
+	margin-left: -15px;
 	float: left;
 }
 .inline-bck{
@@ -76,4 +76,10 @@ li:hover{
 	margin-top: 5%;
 	width: 35%;
 	height: 20px;
+}
+.cerrar{
+	color: gray;
+	background:white;
+	padding: 2px;
+	size: 15px;
 }
