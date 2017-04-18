@@ -1,8 +1,7 @@
 //Etiquetas de eliminar "x"
-var img1 = document.getElementsByClassName("cerrar")[0];
-var img2 = document.getElementsByClassName("cerrar")[1];
-var img3 = document.getElementsByClassName("cerrar")[2];
-var img4 = document.getElementsByClassName("cerrar")[3];
+var botones =document.getElementsByClassName("cerrar");
+//Imágenes
+var imagenes = document.getElementsByClassName("img");
 //Botones de opciones
 var origen = document.getElementById("boton1");
 var extincion = document.getElementById("boton2");
@@ -12,8 +11,13 @@ var secOrigen = document.getElementById("origen");
 var secExt = document.getElementById("extincion");
 
 //Declaración de funciones
-function prueba(){
-	alert("Funciona");
+for(var i = 0; i<botones.length; i++){
+ botones[i].addEventListener("click",eliminar)
+}
+
+function eliminar(){
+	this.previousSibling.style.display="none";
+	this.style.display="none"
 }
 function ocultOrig(){
 	secOrigen.style.display ="none";
@@ -21,11 +25,12 @@ function ocultOrig(){
 function ocultExt(){
 	secExt.style.display ="none";
 }
+function restaurar(){
+		imagenes.style.display="block"
+}
+
 //Eventos
-img1.addEventListener("click", prueba);
-img2.addEventListener("click", prueba);
-img3.addEventListener("click", prueba);
-img4.addEventListener("click", prueba);
+
 origen.addEventListener("click", ocultOrig);
 extincion.addEventListener("click", ocultExt);
-restaurar.addEventListener("click", prueba);
+restaurar.addEventListener("click", restaurar);
