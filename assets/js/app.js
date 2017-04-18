@@ -19,18 +19,22 @@ function eliminar(){
 	this.previousSibling.style.visibility="hidden";
 	this.style.display="none"
 }
-function restaurar(){
-
-}
 function ocultOrig(){
 	secOrigen.style.display ="none";
 }
 function ocultExt(){
 	secExt.style.display ="none";
 }
+function rest(){
+	for(var i=0; i<imagenes.length;i++){
+		imagenes[i].style.visibility="initial";
+		imagenes[i].nextSibling.style.display="block";
+	}
+}
+
 
 //Eventos
 
 origen.addEventListener("click", ocultOrig);
 extincion.addEventListener("click", ocultExt);
-restaurar.addEventListener("click", restaurar);
+restaurar.addEventListener("click", rest);
