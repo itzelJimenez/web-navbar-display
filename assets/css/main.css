@@ -2,6 +2,9 @@ body{
 	font-size: 16px;
 	background: gray;
 }
+h2{
+	text-align: center;
+}
 body > header{
 	background: black;
 	width: 99%;
@@ -37,17 +40,21 @@ li:hover{
 }
 
 #imagenes{
-	width: 100%;
+	float: left;
+	margin-top: 10%;
+	padding: 10%;
+	background: #424242;
+	width: 90%;
+	height: 30%;
 }
 #imagenes > img{
 	width: 15%;
 	height: 120px;
-	margin-top: 13%;
-	margin-left: 8%;
+	margin-top: 0%;
+	margin-left: 5%;
 	float: left;
 }
 #imagenes > span{
-	margin-top: 13%;
 	margin-left: -15px;
 	float: left;
 }
