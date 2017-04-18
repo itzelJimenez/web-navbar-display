@@ -7,16 +7,25 @@ var img4 = document.getElementsByClassName("cerrar")[3];
 var origen = document.getElementById("boton1");
 var extincion = document.getElementById("boton2");
 var restaurar = document.getElementById("boton3");
+//Secciones
+var secOrigen = document.getElementById("origen");
+var secExt = document.getElementById("extincion");
 
 //Declaración de funciones
 function prueba(){
-	alert("Funciona")
+	alert("Funciona");
+}
+function ocultOrig(){
+	secOrigen.style.display ="none";
+}
+function ocultExt(){
+	secExt.style.display ="none";
 }
 //Eventos
 img1.addEventListener("click", prueba);
 img2.addEventListener("click", prueba);
 img3.addEventListener("click", prueba);
 img4.addEventListener("click", prueba);
-origen.addEventListener("click", prueba);
-extincion.addEventListener("click", prueba);
+origen.addEventListener("click", ocultOrig);
+extincion.addEventListener("click", ocultExt);
 restaurar.addEventListener("click", prueba);
