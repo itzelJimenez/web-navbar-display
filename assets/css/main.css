@@ -83,3 +83,8 @@ li:hover{
 	padding: 2px;
 	size: 15px;
 }
+.cerrar:hover{
+	color: white;
+	background: black;
+	cursor: pointer;
+}
