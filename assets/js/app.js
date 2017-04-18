@@ -16,17 +16,17 @@ for(var i = 0; i<botones.length; i++){
 }
 
 function eliminar(){
-	this.previousSibling.style.display="none";
+	this.previousSibling.style.visibility="hidden";
 	this.style.display="none"
+}
+function restaurar(){
+
 }
 function ocultOrig(){
 	secOrigen.style.display ="none";
 }
 function ocultExt(){
 	secExt.style.display ="none";
-}
-function restaurar(){
-		imagenes.style.display="block"
 }
 
 //Eventos
